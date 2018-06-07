@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>show</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/show_style.css') }}" type="text/css">
+    </head>
+    <body>
+        <div id="head">
+            <h1 class="name">文画 Text to Image</h1>
+        </div>
+        <hr/>
+        <div class="bridge"></div>
+        <div id="waiting">
+            <h2 id="wait_text1">Waiting for </h2>
+            <h2 id="wait_time">50</h2>
+            <h2 id="wait_text2">seconds ...</h2>
+        </div>
+        <div class="box2">
+             <div id="wrapper">
+                <div id="imgs">
+                    <ul class="pic">
+                        <li><img id="img1" src="{{ url_for('static', filename='img/loading.gif') }}" ></li>
+                        <li><img id="img2" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img3" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img4" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img5" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img6" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img7" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img8" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img9" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                        <li><img id="img10" src="{{ url_for('static', filename='img/loading.gif')}}" ></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div id="nav">
+                    <ul>
+                        <li><a class="current">&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                        <li><a>&nbsp;</a></li>
+                    </ul>
+                </div>
+                <div id="preous">&lt;</div>
+                <div id="next">&gt;</div>
+            </div>
+            <p></p>
+        </div>
+
+    <div id="des_block">
+        <a href="{{ url_for('homepage') }}"><button type="button" class="spin circle">Back</button></a>
+    </div>
+    </body>
+    <script src="{{ url_for('static', filename='js/show_script.js') }}"></script>
+</html>

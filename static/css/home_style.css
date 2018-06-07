@@ -1,0 +1,63 @@
+body{
+    background-image: url(../img/homeBack.jpg);
+    background-size: 100%;
+}
+
+div#head{
+    margin: -10px -10px;
+    width:102%;
+    float:left;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-bottom:5px solid rgba(128, 128, 128, 0.72);
+}
+
+h1.name{
+    letter-spacing: -3px;
+    font-weight: bolder;
+    font-family:serif;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:white;
+}
+
+div.bridge{
+    width:100%;
+    height:100px;
+}
+
+div#logo_block,#interact,#des_block{
+    width: 100%;
+    text-align: center;
+}
+
+img#logo{
+    width:130px;
+}
+
+input[type="text"]{
+    width: 360px;
+    height:40px;
+    margin-top: 40px;
+}
+
+input[type="submit"]{
+    background-color: #c9bf82;
+    padding: 13px 27px;
+    margin: 40px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Cambria, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 9px 25px 0 rgba(0,0,0,0.19);
+}
+
+h2{
+    font-weight: 400;
+}

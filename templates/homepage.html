@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv ="proma" content = "no-cache"/>
+        <meta http-equiv="cache-control" content="no cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>首页</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/home_style.css')}}" type="text/css">
+    </head>
+    <body>
+        <div id="head">
+            <h1 class="name">文画 Text to Image</h1>
+        </div>
+        <hr/>
+        <div class="bridge"></div>
+        <div id="logo_block">
+            <img id="logo" src="{{ url_for('static',filename='img/logo.png') }}"/>
+        </div>
+        <div id="interact">
+            <form action="{{ url_for('show') }}" method="post">
+                <input type="text" name="input" placeholder="  请输入一句描述鸟的话"/>
+                <input type="submit" value="Try">
+            </form>
+        </div>
+        <div id="des_block">
+            <h2>基于语义分析的图片场景生成</h2>
+            <h2>Descriptive Text to Realistic Image Synthesis</h2>
+        </div>
+    </body>
+</html>
